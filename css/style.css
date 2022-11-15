@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* Colors */
+body {
+  padding: 0 3.5rem;
+  background-color: #222222 !important;
+  color: #FEFEFE !important; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  /* Navbar */ }
+  header .nav__links {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    header .nav__links li {
+      display: inline-block;
+      padding: 0.4em 0.8em 0.4em;
+      background: #302e28;
+      font-size: 1.25em; }
+      header .nav__links li:hover {
+        background-color: #EB8900; }
+      header .nav__links li a {
+        text-decoration: none;
+        color: #FEFEFE; }
+  header button {
+    padding: 0.5em 0.7em 0.6em;
+    margin: 0 3px 0 0;
+    border: none;
+    font-size: 1.25em;
+    background: #302e28;
+    color: #FEFEFE; }
+    header button:hover {
+      background-color: #EB8900; }
+
+main {
+  /* Cards */
+  /* General Choi Bibliography */ }
+  main .title {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #EB8900; }
+  main .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    main .cards #card1 {
+      grid-area: 1 / 1 / 2 / 2; }
+    main .cards #card2 {
+      grid-area: 1 / 2 / 2 / 3; }
+    main .cards #card3 {
+      grid-area: 1 / 3 / 2 / 4; }
+    main .cards #card4 {
+      grid-area: 1 / 4 / 2 / 5; }
+    main .cards a {
+      color: #FEFEFE; }
+    main .cards .card {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 0;
+      background: #302e28;
+      text-align: center;
+      font-size: 15px;
+      /* Card 1 */
+      /* Card 2 */
+      /* Card 3 */
+      /* Card 4 */ }
+      main .cards .card:hover .card__front {
+        transform: perspective(600px) rotateY(180deg); }
+      main .cards .card:hover .card__back {
+        transform: perspective(600px) rotateY(360deg); }
+      main .cards .card__face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        transition: .5s; }
+      main .cards .card__front {
+        transform: perspective(600px) rotateY(0deg); }
+        main .cards .card__front h3 {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+          margin: 2.5rem; }
+        main .cards .card__front p {
+          font-size: 16px;
+          padding: 0 20px; }
+      main .cards .card__back {
+        transform: perspective(600px) rotateY(180deg); }
+        main .cards .card__back h3 {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+          margin: 2.5rem; }
+        main .cards .card__back p {
+          font-size: 16px;
+          padding: 0 20px; }
+      main .cards .card #front1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/general.jpg);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #back1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/general.jpg);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #front2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/logo.png);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #back2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/logo.png);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #front3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/ITF-flag.jpg);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #back3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/ITF-flag.jpg);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #front4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/teoríaTkd.jpg);
+        background-size: cover;
+        background-position: center center; }
+      main .cards .card #back4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/teoríaTkd.jpg);
+        background-size: cover;
+        background-position: center center; }
+  main .generalChoi {
+    margin: 4rem 0; }
+    main .generalChoi p {
+      text-align: justify; }
+    main .generalChoi .generalChoi__finalImg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      align-items: center; }
+      main .generalChoi .generalChoi__finalImg #card5 {
+        grid-area: 1 / 1 / 2 / 2; }
+      main .generalChoi .generalChoi__finalImg #card6 {
+        grid-area: 1 / 2 / 2 / 3; }
+      main .generalChoi .generalChoi__finalImg #card7 {
+        grid-area: 1 / 3 / 2 / 4; }
+      main .generalChoi .generalChoi__finalImg img {
+        width: 300px;
+        height: 300px; }
+      main .generalChoi .generalChoi__finalImg .gCard {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 0;
+        background: #302e28;
+        text-align: center;
+        font-size: 15px; }
+        main .generalChoi .generalChoi__finalImg .gCard:hover .gCard__front {
+          transform: perspective(600px) rotateY(180deg); }
+        main .generalChoi .generalChoi__finalImg .gCard:hover .gCard__back {
+          transform: perspective(600px) rotateY(360deg); }
+        main .generalChoi .generalChoi__finalImg .gCard__face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          overflow: hidden;
+          transition: .5s; }
+        main .generalChoi .generalChoi__finalImg .gCard__front {
+          transform: perspective(600px) rotateY(0deg); }
+        main .generalChoi .generalChoi__finalImg .gCard__back {
+          transform: perspective(600px) rotateY(180deg); }
+          main .generalChoi .generalChoi__finalImg .gCard__back p {
+            font-size: 16px;
+            padding: 0 20px; }
+        main .generalChoi .generalChoi__finalImg .gCard #back5 {
+          background: url(/resources/img/general3.jpg);
+          background-size: cover;
+          background-position: center center; }
+        main .generalChoi .generalChoi__finalImg .gCard #back6 {
+          background: url(/resources/img/general4.jpg);
+          background-size: cover;
+          background-position: center center; }
+        main .generalChoi .generalChoi__finalImg .gCard #back7 {
+          background: url(/resources/img/general5.jpg);
+          background-size: cover;
+          background-position: center center; }
