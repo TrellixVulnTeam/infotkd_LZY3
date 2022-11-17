@@ -1,8 +1,8 @@
 @import 'variables';
+@import 'contactForm';
 
 body {
     padding: 0 3.5rem;
-
     background-color: $darkGray !important;
     color: $white !important;
     scroll-behavior: smooth;
@@ -67,13 +67,13 @@ body {
     }
 }
 
+/* Navbar */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
 
-    /* Navbar */
     .nav {
         &__links {
             list-style: none;
@@ -83,6 +83,7 @@ header{
             li {
                 display: inline-block;
                 padding: 0.4em 0.8em 0.4em;
+                margin-right: .5rem;
                 background: $dirtyGray;
                 font-size: 1.25em;
                     &:hover {
@@ -307,13 +308,13 @@ main {
         #gcImg2 {
             float: right;
             margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         #gcImg3 {
             float: left;
             margin-right: 1.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .generalChoi__finalImg {
@@ -401,5 +402,62 @@ main {
             margin: 1.5rem 0 1rem 0;
             font-size: 20px;
         }
+
+        h4 {
+            background: $dirtyGray;
+            padding: .5rem;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 15px;
+        }
+    }
+}
+
+/* Contact Form */
+
+
+
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 2px solid #46443f;
+
+    &__nav {
+        margin-top: 2rem;
+
+        a {
+            color: $white;
+            font-weight: 700;
+            margin: 0 1rem;
+        }
+    }
+
+    &__contact {
+        padding-top: 2rem;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 .2rem;
+            
+            text-align: center;
+            line-height: 40px;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        
+            &:hover {
+                color: #24262b;
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+        font-size: 14px;
     }
 }

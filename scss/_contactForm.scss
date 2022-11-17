@@ -1,0 +1,161 @@
+.contact__container {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #222222;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form__title {
+        color: #222222;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-bottom: 0.7rem;
+    }
+    
+    .form__title2 {
+        color: #ffff;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 820px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .contact-info {
+            background: #ffff;
+            padding: 2rem 2.2rem;
+            position: relative;
+
+            .info {
+                
+                .information {
+                    display: flex;
+                    color: #555;
+                    margin: 0.7rem 0;
+                    align-items: center;
+                    font-size: 0.95rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $dirtyGray;
+                    }
+
+                    i {
+                        padding-right: .5rem;
+                    }
+                }
+            }
+
+            .social-media {
+                color: $dirtyGray;
+
+                .contact {
+                    margin-top: 2rem;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        display: inline-block;
+                        height: 40px;
+                        width: 40px;
+                        background-color: $dirtyGray;
+                        margin: 0 .2rem;
+                        
+                        text-align: center;
+                        line-height: 40px;
+                        color: #ffffff;
+                        transition: all 0.5s ease;
+                    
+                        &:hover {
+                            color: $white;
+                            background-color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .contact-form {
+        background-color: #302e28;
+        position: relative;
+
+        .contact-form:before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-color: 302e28;
+            transform: rotate(45deg);
+            top: 50px;
+            left: -13px;
+        }
+
+        form {
+            padding: 2.3rem 2.2rem;
+            z-index: 10;
+            overflow: hidden;
+            position: relative;
+    
+            .submit__btn {
+                padding: 0.6rem 1.3rem;
+                color: #ffffff;
+                background-color: #302e28;
+                border: 2px solid #fafafa;
+                font-size: 0.95rem;
+                color: 302e28;
+                line-height: 1;
+                outline: none;
+                cursor: pointer;
+                transition: 0.3s;
+                margin: 0;
+                
+                &:hover {
+                    background-color: #fff;
+                    color: #302e28;
+                }
+            }
+        }
+    }
+
+    .input-container {
+        position: relative;
+
+        .input {
+            width: 100%;
+            outline: none;
+            border: 2px solid #fafafa;
+            background: none;
+            padding: 0.6rem 1.2rem;
+            color: #fff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+        }
+        
+        textarea.input {
+            padding: 0.8rem 1.2rem;
+            min-height: 150px;
+            resize: none;
+            overflow-y: auto;
+        }
+    }
+    
+    .text {
+        color: #333;
+        margin: 1.5rem 0 2rem 0;
+    }
+}
+
+/* Responsive */
+
